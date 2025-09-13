@@ -1,4 +1,10 @@
 module Main (main) where
 
+import QasmParser
+
+
 main :: IO ()
-main = putStrLn "Test suite not yet implemented."
+main = do
+    pr <- parseQasmFile "tmp/adder10_inlined.qasm"
+    putStrLn $ show pr
+    return ()

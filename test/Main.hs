@@ -1,6 +1,6 @@
 module Main (main) where
 
-import QasmParser
+import Parser
 
 
 main :: IO ()

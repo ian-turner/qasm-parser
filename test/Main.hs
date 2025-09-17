@@ -5,6 +5,7 @@ import Parser
 
 main :: IO ()
 main = do
-    pr <- parseQasmFile "tmp/adder10_inlined.qasm"
-    putStrLn $ show pr
+    (Program _ stmts) <- parseQasmFile "tmp/adder10_inlined.qasm"
+    let stmts_str = map show stmts
+    putStr (unlines stmts_str)
     return ()

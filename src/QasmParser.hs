@@ -1,5 +1,5 @@
 {-# LANGUAGE LambdaCase #-}
-module Parser where
+module QasmParser where
 
 import Text.Parsec
 import Text.Parsec.String (Parser)

@@ -68,7 +68,7 @@ library
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.13.0.0 ,
+    build-depends:    base >=4.7 ,
                       parsec
 
     -- Directories containing source files.
@@ -101,5 +101,5 @@ test-suite qasm-parser-test
 
     -- Test dependencies.
     build-depends:
-        base ^>=4.13.0.0,
+        base >=4.7,
         qasm-parser
